@@ -12,23 +12,23 @@ public class Empresa {
     private String Endereco;
     private String Telefone;
     private String Site;
-    private String idCidade;
-    private String idlinha;
+    private Cidade cidade;
+    private Linha linha;
 
-    public String getIdCidade() {
-        return idCidade;
+    public Cidade getCidade() {
+        return cidade;
     }
 
-    public void setIdCidade(String idCidade) {
-        this.idCidade = idCidade;
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
 
-    public String getIdlinha() {
-        return idlinha;
+    public Linha getLinha() {
+        return linha;
     }
 
-    public void setIdlinha(String idlinha) {
-        this.idlinha = idlinha;
+    public void setLinha(Linha linha) {
+        this.linha = linha;
     }
 
     public String get_id() {

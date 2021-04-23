@@ -8,7 +8,15 @@ public class Linha {
     @Id
     private String _id;
     private String NomeLinha;
-    private String idItinerario;
+    private Itinerario itinerario;
+
+    public Itinerario getItinerario() {
+        return itinerario;
+    }
+
+    public void setItinerario(Itinerario itinerario) {
+        this.itinerario = itinerario;
+    }
 
     public String get_id() {
         return _id;
@@ -26,13 +34,6 @@ public class Linha {
         NomeLinha = nomeLinha;
     }
 
-    public String getIdItinerario() {
-        return idItinerario;
-    }
-
-    public void setIdItinerario(String idItinerario) {
-        this.idItinerario = idItinerario;
-    }
 
 
 }

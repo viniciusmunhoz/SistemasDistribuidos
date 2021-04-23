@@ -11,7 +11,15 @@ public class QuadroHorario {
     private String Sabado;
     private String Domingo;
     private String Feriado;
-    private String id_Linha;
+    private Linha linha;
+
+    public Linha getLinha() {
+        return linha;
+    }
+
+    public void setLinha(Linha linha) {
+        this.linha = linha;
+    }
 
     public String get_id() {
         return _id;
@@ -53,12 +61,5 @@ public class QuadroHorario {
         Feriado = feriado;
     }
 
-    public String getId_Linha() {
-        return id_Linha;
-    }
-
-    public void setId_Linha(String id_Linha) {
-        this.id_Linha = id_Linha;
-    }
 }
 
